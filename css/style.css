@@ -61,3 +61,7 @@ hr.h-color {
     box-shadow: inset;
 
 }
+
+td, th{ 
+    text-align: center;
+}
