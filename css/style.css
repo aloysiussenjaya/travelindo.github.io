@@ -1,21 +1,21 @@
-:root { 
-    --primary-color: #14213d;
-    --secondary-color: #e9ecef;
-    --third-color: #fca311;
-    --white-color: #ffffff;
+:root {
+  --primary-color: #14213d;
+  --secondary-color: #e9ecef;
+  --third-color: #fca311;
+  --white-color: #ffffff;
 }
 
-body { 
-    background: var(--secondary-color);
+body {
+  background: var(--secondary-color);
 }
 
 /*--------------------------------------- 
                 Side Bar
 ---------------------------------------*/
-.wrapper { 
-    display: flex;
-    width: 100%;
-    align-items: stretch;
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
 }
 
 #sidebar {
@@ -27,7 +27,7 @@ body {
 }
 
 #sidebar .sidebar-header {
-    padding: 24px;
+  padding: 24px;
 }
 
 #sidebar .sidebar-content {
@@ -36,59 +36,57 @@ body {
   bottom: auto;
 }
 
-#sidebar ul li a { 
-    padding: 8px 12px 8px 12px;
-    font-size: 1.1em;
-    text-decoration: none;
-    color: var(--secondary-color);    
-    display: block;
+#sidebar ul li a {
+  padding: 8px 12px 8px 12px;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: block;
 }
 
-#sidebar ul li.active{ 
-    color: var(--primary-color);
-    background-color: orange;
-    border-radius: 8px;
+#sidebar ul li.active {
+  color: var(--primary-color);
+  background-color: orange;
+  border-radius: 8px;
 }
 
 /*--------------------------------------- 
               Data Tables
 ---------------------------------------*/
-#table-list-of-orders { 
-    width: 100%;
-}
-td, th{ 
-    text-align: center;
+td,
+th {
+  text-align: center;
 }
 
 /*--------------------------------------- 
                 Content
 ---------------------------------------*/
-#content { 
-    width: 100%;
-    padding: 24px;
-    min-height: 100vh;
-    transition: all 0.3s;
+#content {
+  width: 100%;
+  padding: 24px;
+  min-height: 100vh;
+  transition: all 0.3s;
 }
 
-.rounded-box { 
-    background: var(--white-color);
-    border-radius: 8px;
-    box-shadow: inset;
-    padding: 24px;
+.rounded-box {
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: inset;
+  padding: 24px;
 }
 
 /*--------------------------------------- 
                 Media
 ---------------------------------------*/
-@media(max-width: 767px) {
-    #sidebar {
-        margin-left: -280px;
-        position: fixed;
-        min-height: 100vh;
-        z-index: 1;
-    }
+@media (max-width: 767px) {
+  #sidebar {
+    margin-left: -280px;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1;
+  }
 
-    #sidebar.active {
-        margin-left: 0px;
-    }
+  #sidebar.active {
+    margin-left: 0px;
+  }
 }
