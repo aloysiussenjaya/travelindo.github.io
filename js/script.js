@@ -5,3 +5,7 @@ $('.open-btn').on('click', function() {
 $('.close-btn').on('click', function() {
     $('.sidebar').removeClass('active');
 })
+
+$(document).ready(function() { 
+    $('search-select-box select').selectpicker();
+})
