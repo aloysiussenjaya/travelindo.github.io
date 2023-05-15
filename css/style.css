@@ -30,6 +30,12 @@ body {
     padding: 24px;
 }
 
+#sidebar .sidebar-content {
+  position: sticky;
+  top: 0px;
+  bottom: auto;
+}
+
 #sidebar ul li a { 
     padding: 8px 12px 8px 12px;
     font-size: 1.1em;
@@ -47,6 +53,9 @@ body {
 /*--------------------------------------- 
               Data Tables
 ---------------------------------------*/
+#table-list-of-orders { 
+    width: 100%;
+}
 td, th{ 
     text-align: center;
 }

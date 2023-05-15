@@ -6,6 +6,6 @@ $('.close-btn').on('click', function() {
     $('.sidebar').removeClass('active');
 })
 
-$(document).ready(function() { 
-    $('search-select-box select').selectpicker();
-})
+$(document).ready(function () {
+    $('#example').DataTable();
+});
