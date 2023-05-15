@@ -1,67 +1,92 @@
-:root { 
-    --primary-color: #14213d;
-    --secondary-color: #e9ecef;
-    --third-color: #fca311;
-    --white-color: #ffffff;
+:root {
+  --primary-color: #14213d;
+  --secondary-color: #e9ecef;
+  --third-color: #fca311;
+  --white-color: #ffffff;
 }
 
-body { 
-    background: var(--secondary-color);
+body {
+  background: var(--secondary-color);
 }
 
-#side_nav {
+/*--------------------------------------- 
+                Side Bar
+---------------------------------------*/
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#sidebar {
   background: var(--primary-color);
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 280px;
+  max-width: 280px;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+#sidebar .sidebar-header {
+  padding: 24px;
+}
+
+#sidebar .sidebar-content {
+  position: sticky;
+  top: 0px;
+  bottom: auto;
+}
+
+#sidebar ul li a {
+  padding: 8px 12px 8px 12px;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: block;
+}
+
+#sidebar ul li.active {
+  color: var(--primary-color);
+  background-color: orange;
+  border-radius: 8px;
+}
+
+/*--------------------------------------- 
+              Data Tables
+---------------------------------------*/
+td,
+th {
+  text-align: center;
+}
+
+/*--------------------------------------- 
+                Content
+---------------------------------------*/
+#content {
+  width: 100%;
+  padding: 24px;
+  min-height: 100vh;
   transition: all 0.3s;
 }
 
-.content { 
+.rounded-box {
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: inset;
+  padding: 24px;
+}
+
+/*--------------------------------------- 
+                Media
+---------------------------------------*/
+@media (max-width: 767px) {
+  #sidebar {
+    margin-left: -280px;
+    position: fixed;
     min-height: 100vh;
-    width: 100%;
-}
+    z-index: 1;
+  }
 
-hr.h-color { 
-    background: var(--third-color);
-}
-
-.sidebar li.active { 
-    background: var(--third-color);
-    border-radius: 8px;
-}
-
-.sidebar li.active a, .sidebar li.active a:hover { 
-    color: var(--primary-color);
-}
-
-.sidebar li a { 
-    color: var(--secondary-color);
-}
-
-@media(max-width: 767px) {
-    #side_nav {
-        margin-left: -250px;
-        position: fixed;
-        min-height: 100vh;
-        z-index: 1;
-    }
-
-    #side_nav.active {
-        margin-left: 0px;
-    }
-}
-
-.navbar-custom { 
-    background: var(--primary-color);
-}
-
-.container-rounded {
-    background: var(--white-color);
-    border-radius: 8px;
-    box-shadow: inset;
-
-}
-
-td, th{ 
-    text-align: center;
+  #sidebar.active {
+    margin-left: 0px;
+  }
 }

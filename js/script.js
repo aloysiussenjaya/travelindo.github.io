@@ -5,3 +5,8 @@ $('.open-btn').on('click', function() {
 $('.close-btn').on('click', function() {
     $('.sidebar').removeClass('active');
 })
+
+$(document).ready(function () {
+    $('#table-list-of-orders').DataTable();
+    $('#table-list-of-po').DataTable();
+});
