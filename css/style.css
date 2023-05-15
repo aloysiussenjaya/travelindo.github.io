@@ -9,7 +9,9 @@ body {
     background: var(--secondary-color);
 }
 
-/* Sidebar */
+/*--------------------------------------- 
+                Side Bar
+---------------------------------------*/
 .wrapper { 
     display: flex;
     width: 100%;
@@ -42,12 +44,16 @@ body {
     border-radius: 8px;
 }
 
-/* Data Tables */
+/*--------------------------------------- 
+              Data Tables
+---------------------------------------*/
 td, th{ 
     text-align: center;
 }
 
-/* Content  */
+/*--------------------------------------- 
+                Content
+---------------------------------------*/
 #content { 
     width: 100%;
     padding: 24px;
@@ -59,11 +65,15 @@ td, th{
     background: var(--white-color);
     border-radius: 8px;
     box-shadow: inset;
+    padding: 24px;
 }
 
+/*--------------------------------------- 
+                Media
+---------------------------------------*/
 @media(max-width: 767px) {
     #sidebar {
-        margin-left: -250px;
+        margin-left: -280px;
         position: fixed;
         min-height: 100vh;
         z-index: 1;
