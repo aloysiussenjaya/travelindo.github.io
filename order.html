@@ -66,6 +66,7 @@
 
       <!-- Page Content -->
       <div id="content">
+
         <!-- Add New Vendor Form -->
         <div
           class="modal fade"
@@ -97,6 +98,61 @@
                       type="text"
                       class="form-control"
                       id="vendor-name"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add New Company Form -->
+        <div
+          class="modal fade"
+          id="addNewCompanyModal"
+          tabindex="-1"
+          aria-labelledby="addNewCompanyModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addNewCompanyModalLabel">Add New Company</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="company-name" class="col-form-label"
+                      >Name:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="company-name"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company-address" class="col-form-label"
+                      >Address:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="company-address"
                     />
                   </div>
                 </form>
@@ -164,6 +220,8 @@
                       class="btn btn-primary"
                       type="button"
                       id="add-new-company-button"
+                      data-toggle="modal"
+                      data-target="#addNewCompanyModal"
                     >
                       Add New
                     </button>
