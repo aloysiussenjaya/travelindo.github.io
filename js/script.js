@@ -7,6 +7,5 @@ $('.close-btn').on('click', function() {
 })
 
 $(document).ready(function () {
-    $('#table-list-of-orders').DataTable();
     $('#table-list-of-po').DataTable();
 });
